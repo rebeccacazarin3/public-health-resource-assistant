@@ -28,7 +28,7 @@ Examples:
 - I need mental health support
 - Where can I get STI testing?
 - I need a doctor
-- I need nutrition assistance
+- I need diatary assistance
 - I need crisis support
 """)
 
@@ -85,6 +85,7 @@ if user_question:
         "mental" in question
         or "anxiety" in question
         or "depression" in question
+        or "sad" in question
     ):
 
         matching_resources = resources[
@@ -99,6 +100,28 @@ if user_question:
         "crisis" in question
         or "suicide" in question
         or "emergency" in question
+        or "bad problem" in question
+        or "not okay" in question
+        or "really bad" in question
+        or "sad" in question
+        or "kms" in question
+        or "kill myself" in question
+        or "seeing things" in question
+        or "hallucinations" in question
+        or "hallucinating" in question
+        or "lost" in question
+        or "alone" in question
+        or "hearing things" in question
+        or "voices" in question
+        or "demons" in question
+        or "demon" in question
+        or "can't stop" in question
+        or "worry" in question
+        or "obsess" in question
+        or "obsessive" in question
+        or "obsessing" in question
+        or "obsessed" in question
+        or "racing" in question
     ):
 
         matching_resources = resources[
@@ -112,6 +135,44 @@ if user_question:
     elif (
         "sti" in question
         or "sexual" in question
+        or "sex" in question
+        or "gave me something" in question
+        or "got something" in question
+        or "burning" in question
+        or "itching" in question
+        or "discharge" in question
+        or "itchy" in question
+        or "spot" in question
+        or "penis" in question
+        or "vagina" in question
+        or "cunt" in question
+        or "pussy" in question
+        or "dick" in question
+        or "cock" in question
+        or "vajayjay" in question
+        or "lady bits" in question
+        or "privates" in question
+        or "twat" in question
+        or "vag" in question
+        or "anus" in question
+        or "butthole" in question
+        or "butt" in question
+        or "starfish" in question
+        or "ass" in question
+        or "asshole" in question
+        or "pubes" in question
+        or "pubic hair" in question
+        or "pregnant" in question
+        or "pregnancy" in question
+        or "baby" in question
+        or "knocked up" in question
+        or "late" in question
+        or "period" in question
+        or "pap" in question
+        or "bathroom" in question
+        or "sting" in question
+        or "stinging" in question
+        or "pain" in question
     ):
 
         matching_resources = resources[
@@ -125,6 +186,35 @@ if user_question:
     elif (
         "doctor" in question
         or "primary care" in question
+        or "vomiting" in question
+        or "nausea" in question
+        or "diarrhea" in question
+        or "puke" in question
+        or "hurl" in question
+        or "headache" in question
+        or "constipation" in question
+        or "ache" in question
+        or "stuffy" in question
+        or "fever" in question
+        or "rash" in question
+        or "temperature" in question
+        or "temp" in question
+        or "refill" in question
+        or "meds" in question
+        or "medication" in question
+        or "cough" in question
+        or "flu" in question
+        or "sinus" in question
+        or "allergy" in question
+        or "allergies" in question
+        or "pregnant" in question
+        or "pregnancy" in question
+        or "baby" in question
+        or "knocked up" in question
+        or "late" in question
+        or "period" in question
+        or "pap" in question
+        or "bathroom" in question
     ):
 
         matching_resources = resources[
@@ -138,6 +228,19 @@ if user_question:
     elif (
         "nutrition" in question
         or "diet" in question
+        or "hungry" in question
+        or "starving" in question
+        or "eat" in question
+        or "food" in question
+        or "vitamin" in question
+        or "gluten" in question
+        or "vegetarian" in question
+        or "vegan" in question
+        or "paleo" in question
+        or "protein" in question
+        or "carbs" in question
+        or "carbohydrates" in question
+        or "sugar" in question
     ):
 
         matching_resources = resources[
@@ -152,7 +255,7 @@ if user_question:
     if matching_resources.empty:
 
         st.info(
-            "I couldn't find matching resources. Try words like mental health, STI testing, crisis, doctor, or nutrition."
+            "I couldn't find matching resources. Try words like mental health, STI testing, crisis, doctor, or diet."
         )
 
     else:
